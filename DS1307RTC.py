@@ -29,7 +29,7 @@ def rtc_settime(y, m, d, hh, mm, ss):
     value.append(bin2bcd(0))
     value.append(bin2bcd(d))
     value.append(bin2bcd(m))
-    value.append(bin2bcd(y - 2000))
+    value.append(bin2bcd(y))
     i2c.write(RTC_ADDR, b'\x00' + bytearray(value))
 
 # rtc_gettime()
