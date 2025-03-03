@@ -93,7 +93,3 @@ class OLED1306(object):
             self.set_pixel(x, i, c)
 
 
-#if __name__ == '__main__':
-#    display = OLED1306()
-#    display.set_clear()
-#    display.set_text(0, 0, "hello from OLED")
