@@ -28,7 +28,7 @@ screen = bytearray(1025)  # send byte plus pixels
 screen[0] = 0x40
 
 
-class OLED1306(object):
+class OLED1306:
 
     def __init__(self):
         for c in cmd:
