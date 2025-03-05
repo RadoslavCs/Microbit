@@ -1,7 +1,6 @@
 from microbit import *
 from os import *
 import time
-from oled import *
 
 class ESP8266_IoT:
     def __init__(self, tx_pin=pin8, rx_pin=pin12, baudrate=115200):
