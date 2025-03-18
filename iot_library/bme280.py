@@ -71,11 +71,9 @@ class BME280:
 
     def __get(self):
         # Čítanie surových údajov a ich výpočet
-        adc_T = (self.__gr(0xFA) << 12) + (self.__gr(0xFB) << 4) + \
-                (self.__gr(0xFC) >> 4)
+        adc_T = (self.__gr(0xFA) << 12) + (self.__gr(0xFB) << 4) + (self.__gr(0xFC) >> 4)
         var1 = (((adc_T >> 3) - (self._T1 << 1)) * self._T2) >> 11
-        var2 = (((((adc_T >> 4) - self._T1) * ((adc_T >> 4) - self._T1)) >> 12)
-                * self._T3) >> 14
+        var2 = (((((adc_T >> 4) - self._T1) * ((adc_T >> 4) - self._T1)) >> 12) * self._T3) >> 14
         t = var1 + var2
         self.__T = ((t * 5 + 128) >> 8) / 100
         # Výpočet tlaku
@@ -83,13 +81,11 @@ class BME280:
         var2 = (((var1 >> 2) * (var1 >> 2)) >> 11) * self._P6
         var2 = var2 + ((var1 * self._P5) << 1)
         var2 = (var2 >> 2) + (self._P4 << 16)
-        var1 = (((self._P3 * ((var1 >> 2) * (var1 >> 2)) >> 13) >> 3) +
-                (((self._P2) * var1) >> 1)) >> 18
+        var1 = (((self._P3 * ((var1 >> 2) * (var1 >> 2)) >> 13) >> 3) + (((self._P2) * var1) >> 1)) >> 18
         var1 = ((32768 + var1) * self._P1) >> 15
         if var1 == 0:
             return  # Aby sa predišlo výnimke spôsobenej delením nulou
-        adc_P = (self.__gr(0xF7) << 12) + (self.__gr(0xF8) << 4) + \
-                (self.__gr(0xF9) >> 4)
+        adc_P = (self.__gr(0xF7) << 12) + (self.__gr(0xF8) << 4) + (self.__gr(0xF9) >> 4)
         p = ((1048576 - adc_P) - (var2 >> 12)) * 3125
         if p < 0x80000000:
             p = (p << 1) // var1
@@ -101,11 +97,8 @@ class BME280:
         # Čítanie vlhkosti
         adc_H = (self.__gr(0xFD) << 8) + self.__gr(0xFE)
         var1 = t - 76800
-        var2 = (((adc_H << 14) - (self._H4 << 20) -
-                 (self._H5 * var1)) + 16384) >> 15
-        var1 = var2 * (((((((var1 * self._H6) >> 10) * (
-                ((var1 * self._H3) >> 11) + 32768)) >> 10) + 2097152) *
-                        self._H2 + 8192) >> 14)
+        var2 = (((adc_H << 14) - (self._H4 << 20) - (self._H5 * var1)) + 16384) >> 15
+        var1 = var2 * (((((((var1 * self._H6) >> 10) * (((var1 * self._H3) >> 11) + 32768)) >> 10) + 2097152) * self._H2 + 8192) >> 14)
         var2 = var1 - (((((var1 >> 15) * (var1 >> 15)) >> 7) * self._H1) >> 4)
         if var2 < 0:
             var2 = 0
@@ -138,24 +131,4 @@ class BME280:
         self.__get()
         return self.__P
 
-    # Výpočet absolútnej nadmorskej výšky
-    def get_altitude(self):
-        """
-        Čítanie nadmorskej výšky v metroch
-        """
-        self.__get()
-        return 44330 * (1 - (self.__P / 101325) ** (1 / 5.255))
 
-    # Režim normálnej prevádzky
-    def set_power_on(self):
-        """
-        Začiatok merania, aktuálne sledovanie environmentálnych premenných
-        """
-        self.__sr(0xF4, 0x2F)
-
-    # Spánkový režim
-    def set_power_off(self):
-        """
-        Senzor prejde do spánkového režimu, zachováva posledné namerané hodnoty
-        """
-        self.__sr(0xF4, 0)

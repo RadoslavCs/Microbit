@@ -43,7 +43,7 @@ class RTC1307:
     # Získa hodnotu zo zoznamu podľa zadaného indexu
     # Rok:    index = 0
     # Mesiac: index = 1
-    # Deň:    index = 2 --> Deň v týždni (nepoužíva sa)
+    # Deň:    index = 2
     # Hodina: index = 3
     # Minuta: index = 4
     # Sekunda:index = 5

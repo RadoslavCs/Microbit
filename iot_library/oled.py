@@ -45,25 +45,11 @@ class OLED1306:
         self.__command([0x00 | c1])  # lower start column address
         self.__command([0x10 | c2])  # upper start column address
 
-    def set_pixel(self, x, y, color=1):
-        page, shift_page = divmod(y, 8)
-        ind = x + page * 128
-        b = screen[ind] | (1 << shift_page) if color else screen[ind] & ~ (1 << shift_page)
-        screen[ind] = b
-        self.__set_pos(x, page)
-        i2c.write(ADDR, bytearray([0x40, b]))
-
     def set_clear(self, c=0):
         global screen
         for i in range(1, 1025):
             screen[i] = 0
         self.set_refresh()
-
-    def set_power_on(self):
-        self.__command([0xAF])
-
-    def set_power_off(self):
-        self.__command([0xAE])
 
     def set_refresh(self):
         self.__set_pos()
@@ -82,14 +68,5 @@ class OLED1306:
         ind0 = x * 5 + y * 128
         i2c.write(ADDR, b'\x40' + screen[ind0:ind + 1])
 
-    def draw_row(self, x, y, l, c=1):
-        d = 1 if l > 0 else -1
-        for i in range(x, x + l, d):
-            self.set_pixel(i, y, c)
-
-    def draw_col(self, x, y, l, c=1):
-        d = 1 if l > 0 else -1
-        for i in range(y, y + l, d):
-            self.set_pixel(x, i, c)
 
 
