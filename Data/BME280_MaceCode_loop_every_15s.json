@@ -1,0 +1,87 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MaceCode",
+		"description": "Microbit provides the data from BME280",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Temperature",
+		"field2": "Humidity",
+		"field3": "Pressure",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-22T13:35:36Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-22T14:02:26Z",
+			"entry_id": 1,
+			"field1": "23",
+			"field2": "52",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:02:55Z",
+			"entry_id": 2,
+			"field1": "23",
+			"field2": "52",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:03:11Z",
+			"entry_id": 3,
+			"field1": "23",
+			"field2": "52",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:03:26Z",
+			"entry_id": 4,
+			"field1": "23",
+			"field2": "52",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:03:55Z",
+			"entry_id": 5,
+			"field1": "23",
+			"field2": "52",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:04:11Z",
+			"entry_id": 6,
+			"field1": "23",
+			"field2": "53",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:04:40Z",
+			"entry_id": 7,
+			"field1": "23",
+			"field2": "53",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:04:55Z",
+			"entry_id": 8,
+			"field1": "23",
+			"field2": "53",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:05:26Z",
+			"entry_id": 9,
+			"field1": "23",
+			"field2": "53",
+			"field3": "988"
+		},
+		{
+			"created_at": "2025-03-22T14:05:55Z",
+			"entry_id": 10,
+			"field1": "22",
+			"field2": "60",
+			"field3": "988"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MaceCode",
+		"description": "Microbit provides the data from UV Light Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "UV Light",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-22T16:35:23Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-22T20:30:10Z",
+			"entry_id": 1,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:30:26Z",
+			"entry_id": 2,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:30:55Z",
+			"entry_id": 3,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:31:10Z",
+			"entry_id": 4,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:31:25Z",
+			"entry_id": 5,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:31:55Z",
+			"entry_id": 6,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:32:25Z",
+			"entry_id": 7,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:32:41Z",
+			"entry_id": 8,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:33:10Z",
+			"entry_id": 9,
+			"field1": "6"
+		},
+		{
+			"created_at": "2025-03-22T20:33:26Z",
+			"entry_id": 10,
+			"field1": "6"
+		}
+	]
+}

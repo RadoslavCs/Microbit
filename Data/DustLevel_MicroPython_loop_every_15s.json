@@ -1,0 +1,65 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MicroPython",
+		"description": "Microbit provides the data from Dust Level Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Dust Level",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-23T09:40:46Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-23T09:59:55Z",
+			"entry_id": 1,
+			"field1": "128.0564"
+		},
+		{
+			"created_at": "2025-03-23T10:00:25Z",
+			"entry_id": 2,
+			"field1": "36.36364"
+		},
+		{
+			"created_at": "2025-03-23T10:00:55Z",
+			"entry_id": 3,
+			"field1": "141.6405"
+		},
+		{
+			"created_at": "2025-03-23T10:01:10Z",
+			"entry_id": 4,
+			"field1": "314.838"
+		},
+		{
+			"created_at": "2025-03-23T10:01:25Z",
+			"entry_id": 5,
+			"field1": "39.75967"
+		},
+		{
+			"created_at": "2025-03-23T10:01:55Z",
+			"entry_id": 6,
+			"field1": "39.75967"
+		},
+		{
+			"created_at": "2025-03-23T10:02:10Z",
+			"entry_id": 7,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T10:02:40Z",
+			"entry_id": 8,
+			"field1": "100.8882"
+		},
+		{
+			"created_at": "2025-03-23T10:02:55Z",
+			"entry_id": 9,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T10:03:10Z",
+			"entry_id": 10,
+			"field1": "0"
+		}
+	]
+}

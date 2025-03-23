@@ -1,0 +1,40 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MaceCode",
+		"description": "Microbit provides the data from Distance Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Distance",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-23T10:36:34Z",
+		"last_entry_id": 5
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-23T10:57:25Z",
+			"entry_id": 1,
+			"field1": "41"
+		},
+		{
+			"created_at": "2025-03-23T10:58:55Z",
+			"entry_id": 2,
+			"field1": "35"
+		},
+		{
+			"created_at": "2025-03-23T11:01:55Z",
+			"entry_id": 3,
+			"field1": "25"
+		},
+		{
+			"created_at": "2025-03-23T11:03:25Z",
+			"entry_id": 4,
+			"field1": "16"
+		},
+		{
+			"created_at": "2025-03-23T11:05:55Z",
+			"entry_id": 5,
+			"field1": "9"
+		}
+	]
+}

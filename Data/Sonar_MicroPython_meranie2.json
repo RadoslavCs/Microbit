@@ -1,0 +1,40 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MicroPython",
+		"description": "Microbit provides the data from Distance Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Distance",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-23T11:10:31Z",
+		"last_entry_id": 5
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-23T11:59:25Z",
+			"entry_id": 1,
+			"field1": "37.99138"
+		},
+		{
+			"created_at": "2025-03-23T12:00:10Z",
+			"entry_id": 2,
+			"field1": "38.14655"
+		},
+		{
+			"created_at": "2025-03-23T12:01:40Z",
+			"entry_id": 3,
+			"field1": "23.94828"
+		},
+		{
+			"created_at": "2025-03-23T12:03:40Z",
+			"entry_id": 4,
+			"field1": "14.7931"
+		},
+		{
+			"created_at": "2025-03-23T12:05:40Z",
+			"entry_id": 5,
+			"field1": "7.344828"
+		}
+	]
+}

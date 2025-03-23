@@ -1,0 +1,87 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MicroPython",
+		"description": "Microbit provides the data from BME280",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Temperature",
+		"field2": "Humidity",
+		"field3": "Pressure",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-22T13:35:36Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-22T14:17:11Z",
+			"entry_id": 1,
+			"field1": "22.72",
+			"field2": "53.73633",
+			"field3": "98820"
+		},
+		{
+			"created_at": "2025-03-22T14:17:40Z",
+			"entry_id": 2,
+			"field1": "22.73",
+			"field2": "53.69043",
+			"field3": "98823"
+		},
+		{
+			"created_at": "2025-03-22T14:17:55Z",
+			"entry_id": 3,
+			"field1": "22.73",
+			"field2": "53.50488",
+			"field3": "98816"
+		},
+		{
+			"created_at": "2025-03-22T14:18:10Z",
+			"entry_id": 4,
+			"field1": "22.73",
+			"field2": "53.44532",
+			"field3": "98822"
+		},
+		{
+			"created_at": "2025-03-22T14:18:40Z",
+			"entry_id": 5,
+			"field1": "22.74",
+			"field2": "53.3291",
+			"field3": "98822"
+		},
+		{
+			"created_at": "2025-03-22T14:18:56Z",
+			"entry_id": 6,
+			"field1": "22.74",
+			"field2": "53.38769",
+			"field3": "98825"
+		},
+		{
+			"created_at": "2025-03-22T14:19:25Z",
+			"entry_id": 7,
+			"field1": "22.73",
+			"field2": "53.44532",
+			"field3": "98820"
+		},
+		{
+			"created_at": "2025-03-22T14:19:41Z",
+			"entry_id": 8,
+			"field1": "22.75",
+			"field2": "53.25977",
+			"field3": "98821"
+		},
+		{
+			"created_at": "2025-03-22T14:20:10Z",
+			"entry_id": 9,
+			"field1": "22.74",
+			"field2": "53.03613",
+			"field3": "98822"
+		},
+		{
+			"created_at": "2025-03-22T14:20:26Z",
+			"entry_id": 10,
+			"field1": "22.72",
+			"field2": "52.94043",
+			"field3": "98822"
+		}
+	]
+}

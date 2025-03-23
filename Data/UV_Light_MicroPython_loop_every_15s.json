@@ -1,0 +1,65 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MicroPython",
+		"description": "Microbit provides the data from UV Light Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "UV Light",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-22T20:39:20Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-22T20:59:25Z",
+			"entry_id": 1,
+			"field1": "5.568"
+		},
+		{
+			"created_at": "2025-03-22T20:59:41Z",
+			"entry_id": 2,
+			"field1": "5.568"
+		},
+		{
+			"created_at": "2025-03-22T21:00:10Z",
+			"entry_id": 3,
+			"field1": "5.856"
+		},
+		{
+			"created_at": "2025-03-22T21:00:25Z",
+			"entry_id": 4,
+			"field1": "5.784"
+		},
+		{
+			"created_at": "2025-03-22T21:00:41Z",
+			"entry_id": 5,
+			"field1": "5.808"
+		},
+		{
+			"created_at": "2025-03-22T21:01:10Z",
+			"entry_id": 6,
+			"field1": "5.808"
+		},
+		{
+			"created_at": "2025-03-22T21:01:25Z",
+			"entry_id": 7,
+			"field1": "5.832"
+		},
+		{
+			"created_at": "2025-03-22T21:01:41Z",
+			"entry_id": 8,
+			"field1": "5.88"
+		},
+		{
+			"created_at": "2025-03-22T21:02:10Z",
+			"entry_id": 9,
+			"field1": "5.88"
+		},
+		{
+			"created_at": "2025-03-22T21:02:25Z",
+			"entry_id": 10,
+			"field1": "5.832"
+		}
+	]
+}

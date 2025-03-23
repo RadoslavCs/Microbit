@@ -1,0 +1,65 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MaceCode",
+		"description": "Microbit provides the data from Dust Level Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Dust Level",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-23T09:22:54Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-23T09:36:10Z",
+			"entry_id": 1,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:36:26Z",
+			"entry_id": 2,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:36:55Z",
+			"entry_id": 3,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:37:10Z",
+			"entry_id": 4,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:37:26Z",
+			"entry_id": 5,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:37:41Z",
+			"entry_id": 6,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:38:10Z",
+			"entry_id": 7,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:38:25Z",
+			"entry_id": 8,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:38:41Z",
+			"entry_id": 9,
+			"field1": "0"
+		},
+		{
+			"created_at": "2025-03-23T09:39:10Z",
+			"entry_id": 10,
+			"field1": "0"
+		}
+	]
+}

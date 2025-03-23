@@ -1,0 +1,65 @@
+{
+	"channel": {
+		"id": 2383850,
+		"name": "Testing the data from MicroPython",
+		"description": "Microbit provides the data from Noise Senzor",
+		"latitude": "0.0",
+		"longitude": "0.0",
+		"field1": "Noise",
+		"created_at": "2023-12-18T12:46:58Z",
+		"updated_at": "2025-03-22T16:35:23Z",
+		"last_entry_id": 10
+	},
+	"feeds": [
+		{
+			"created_at": "2025-03-22T19:00:26Z",
+			"entry_id": 1,
+			"field1": "58.8205"
+		},
+		{
+			"created_at": "2025-03-22T19:00:56Z",
+			"entry_id": 2,
+			"field1": "58.09595"
+		},
+		{
+			"created_at": "2025-03-22T19:01:11Z",
+			"entry_id": 3,
+			"field1": "60.20389"
+		},
+		{
+			"created_at": "2025-03-22T19:01:41Z",
+			"entry_id": 4,
+			"field1": "57.31354"
+		},
+		{
+			"created_at": "2025-03-22T19:02:11Z",
+			"entry_id": 5,
+			"field1": "60.05522"
+		},
+		{
+			"created_at": "2025-03-22T19:02:26Z",
+			"entry_id": 6,
+			"field1": "57.15027"
+		},
+		{
+			"created_at": "2025-03-22T19:02:56Z",
+			"entry_id": 7,
+			"field1": "56.92902"
+		},
+		{
+			"created_at": "2025-03-22T19:03:26Z",
+			"entry_id": 8,
+			"field1": "57.81104"
+		},
+		{
+			"created_at": "2025-03-22T19:03:56Z",
+			"entry_id": 9,
+			"field1": "57.16406"
+		},
+		{
+			"created_at": "2025-03-22T19:04:11Z",
+			"entry_id": 10,
+			"field1": "59.03095"
+		}
+	]
+}
