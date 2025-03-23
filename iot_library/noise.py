@@ -8,27 +8,23 @@ class NoiseLevel:
 
     def get_noise(self):
         level, tl, h, sum_l, sum_h = 0, 0, 0, 0, 0
-        for i in range(0, 1000):
-            level = level + self.pin.read_analog()
-            self.pin.read_analog()
-        level = level / 1000
-        for i in range(0, 1000):
+        for i in range(1000):
+            level += self.pin.read_analog()
+        level /= 1000
+
+        for i in range(1000):
             voltage = self.pin.read_analog()
             if voltage >= level:
                 h += 1
-                sum_h = sum_h + voltage
+                sum_h += voltage
             else:
                 tl += 1
-                sum_l = sum_l + voltage
-        if h == 0:
-            sum_h = level
-        else:
-            sum_h = sum_h / h
-        if tl == 0:
-            sum_l = level
-        else:
-            sum_l = sum_l / tl
+                sum_l += voltage
+
+        sum_h = level if h == 0 else sum_h / h
+        sum_l = level if tl == 0 else sum_l / tl
         noise = sum_h - sum_l
+
         if noise <= 4:
             noise = ((noise - 0) * (50 - 30)) / (4 - 0) + 30
         elif noise <= 8:

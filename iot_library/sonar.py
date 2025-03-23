@@ -1,36 +1,27 @@
 from microbit import *
-import utime
-import time
-import ustruct
+from time import sleep_us
+from machine import time_pulse_us
 
 """Základný popis
         Meria vzdialenosť pomocou ultrazvukového senzora Sonar:bit
-        Args: RJ_pin (pin): Pripojovací port
+        Argumenty:
+        pin_trig (pin): Pin pre Trig signál
+        pin_echo (pin): Pin pre Echo signál
         Vráti: Vzdialenosť v centimetroch
 """
 class SonarBit:
-    def __init__(self, pin):
-        self.pin = pin
+    def __init__(self, pin_d):
+        self.__pin_e = pin_d
+        self.__pin_t = pin_d
 
     #Zmeria vzdialenosť v centimetroch a vráti ju.
     def get_distance(self):
-        self.pin.write_digital(0)
-        time.sleep_us(2)
-        self.pin.write_digital(1)
-        time.sleep_us(10)
-        self.pin.write_digital(0)
+        self.__pin_e.read_digital()
+        self.__pin_t.write_digital(1)
+        sleep_us(10)
+        self.__pin_t.write_digital(0)
+        ts = time_pulse_us(self.__pin_e, 1, 25000)
 
-        start_time = running_time()
-        while self.pin.read_digital() == 0:
-            if running_time() - start_time > 100:
-                return -1  # Timeout
+        vzdialenost = ts * 9 / 6 / 58
 
-        start = running_time()
-        while self.pin.read_digital() == 1:
-            if running_time() - start_time > 100:
-                return -1  # Timeout
-
-        duration = running_time() - start  # Čas návratu v milisekundách
-        distance = duration * 34 / 2  # Výpočet vzdialenosti (34 cm/ms rýchlosť zvuku)
-
-        return round(distance, 2)  # Zaokrúhlenie
+        return vzdialenost

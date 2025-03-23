@@ -7,8 +7,13 @@ class WaterLevel:
     def __init__(self, pin):
         self.__pin = pin
 
-    def get_waterlevel(self, high = 4):
+    def get_waterlevel_cm(self, high = 4):
         __value = self.__pin.read_analog()
         percent = ((__value - 0) * (100 - 0)) / (700 - 0) + 0
         height_in_cm = (percent / 100) * high  # Predpokladaná výška nádrže v cm
         return height_in_cm
+
+    def get_waterlevel_percent(self):
+        __value = self.__pin.read_analog()
+        percent = ((__value - 0) * (100 - 0)) / (700 - 0) + 0
+        return percent
